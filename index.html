@@ -1,39 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Index - Education</title>
+    <title>My Restaurant - Home</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            background-color: hsl(200, 60%, 50%);
+            color: white;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            background: black;
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Class Selector */
+        .offer {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1 style="color: red;">Welcome to Education Website</h1>
+    <div id="logo">🍽 My Restaurant</div>
 </header>
 
 <nav>
     <ul>
-        <li><a href="index.html">Index</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
     </ul>
 </nav>
 
 <main>
-    <h2>Welcome</h2>
-    <p>This website is about learning and knowledge.</p>
+    <h2 style="color: blue;">Welcome to our Restaurant</h2> <!-- Inline CSS -->
 
-    <h3>Why Education?</h3>
-    <ul>
-        <li>Knowledge</li>
-        <li>Skills</li>
-        <li>Opportunities</li>
-    </ul>
+    <p>We serve the best food in town.</p>
+
+    <div class="offer">
+        Special Offer: Buy 1 Get 1 Free!
+    </div>
+
+    <h3>Top 3 Best Sellers</h3>
+    <ol>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Pasta</li>
+    </ol>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 Education</p>
+    <p>© 2026 My Restaurant</p>
 </footer>
 
 </body>
